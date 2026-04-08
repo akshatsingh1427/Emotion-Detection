@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 import time
 
-# Load trained model
+
 try:
     model = tf.keras.models.load_model('emotion_model.h5')
     print("✅ Model loaded successfully!")
@@ -11,7 +11,6 @@ except:
     print("❌ Error: Model not found. Please run train.py first")
     exit()
 
-# Emotion labels with custom colors (BGR format)
 emotion_data = {
     'Angry': {'label': 'Angry', 'color': (0, 0, 255), 'display': '😠 Angry', 'short': 'A'},      # Red
     'Disgust': {'label': 'Disgust', 'color': (0, 128, 0), 'display': '🤢 Disgust', 'short': 'D'},  # Green
