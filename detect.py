@@ -207,7 +207,7 @@ while True:
         fps = 0.9 * fps + 0.1 * (1 / (current_time - fps_time))
     fps_time = current_time
     
-    # Initialize variables for this frame
+    
     current_emotion = None
     current_predictions = last_predictions.copy()
     faces_detected = 0
