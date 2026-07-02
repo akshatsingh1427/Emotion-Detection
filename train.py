@@ -5,7 +5,6 @@ from tensorflow import keras
 import cv2
 import matplotlib.pyplot as plt
 
-# Load data
 print("Loading data...")
 data = pd.read_csv('data/fer2013.csv')
 
