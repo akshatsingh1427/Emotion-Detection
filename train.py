@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 print("Loading data...")
 data = pd.read_csv('data/fer2013.csv')
 
-# Prepare images
 pixels = data['pixels'].tolist()
 emotions = data['emotion'].values
 
