@@ -11,7 +11,6 @@ data = pd.read_csv('data/fer2013.csv')
 pixels = data['pixels'].tolist()
 emotions = data['emotion'].values
 
-# Convert to images
 images = []
 for pixel_seq in pixels:
     img = np.array(pixel_seq.split(), dtype='float32').reshape(48, 48)
