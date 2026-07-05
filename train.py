@@ -19,7 +19,6 @@ for pixel_seq in pixels:
 images = np.array(images) / 255.0
 images = np.expand_dims(images, -1)  # Add channel dimension
 
-# Convert labels to categorical
 labels = keras.utils.to_categorical(emotions, 7)
 
 # Split data
