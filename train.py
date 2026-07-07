@@ -24,7 +24,6 @@ labels = keras.utils.to_categorical(emotions, 7)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
 
-# Simple CNN Model
 model = keras.Sequential([
     keras.layers.Conv2D(32, (3,3), activation='relu', input_shape=(48,48,1)),
     keras.layers.MaxPooling2D(2,2),
