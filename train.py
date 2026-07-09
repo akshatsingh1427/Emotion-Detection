@@ -41,7 +41,7 @@ model.compile(optimizer='adam',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
 
-# Train
+# Train model
 print("Training model...")
 history = model.fit(X_train, y_train,
                     validation_data=(X_test, y_test),
